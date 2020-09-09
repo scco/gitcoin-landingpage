@@ -1,0 +1,29 @@
+button{
+
+	margin:0;
+	padding:1em 1.5em;
+	border:0;
+	outline:0;
+
+	font-size: 100%;
+
+	color: var(--starwhite);
+	background-color: var(--vinuspurple);
+
+	cursor: pointer;
+	transition: all 500ms ease;
+
+	margin-bottom: 1rem;
+
+	&:hover{
+		background-color: var(--polarisblue);
+	};
+
+}
+
+
+a{
+	button{
+		text-decoration: none;
+	}
+}

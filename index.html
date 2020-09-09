@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<title>landingpage</title>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+
+	<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;800&display=swap" rel="stylesheet">
+
+	<link href="css/app.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<script src="js/town.js"></script>
+	<script src="js/txtRotate.js"></script>
+	<script src="js/sal.js"></script>
+	<script src="js/animations.js"></script>
+
+
+</head>
+
+<body>
+
+
+
+<!-- fixed logo-->
+<div id="logo" >
+	<a href="#">
+		<img src="assets/logo_animated.svg" alt="" >
+	</a>
+</div>
+
+
+
+
+<!-- fixed signup button-->
+<div id="fixed-signup-button">
+	<a href="#"><button class="floating2">Signup with Gitcoin</button></a>
+</div>
+
+
+
+
+<!-- section town. -->
+
+<section id="town">
+
+	<figure data-height="20vh" data-speed="1"><img src="assets/town_house1.svg"></figure>
+	<figure data-height="20vh" data-speed="1"><img src="assets/town_house2.svg"></figure>
+	<figure data-height="25vh" data-speed="1"><img src="assets/town_house3.svg"></figure>
+	<figure data-height="20vh" data-speed="1"><img src="assets/town_house4.svg"></figure>
+	<figure data-height="20vh" data-speed="1"><img src="assets/town_house5.svg"></figure>
+	<figure data-height="20vh" data-speed="1"><img src="assets/town_house6.svg"></figure>
+
+	<figure data-height="30vh" data-speed="2"><img src="assets/town_house1.svg"></figure>
+	<figure data-height="30vh" data-speed="2"><img src="assets/town_house2.svg"></figure>	
+	<figure data-height="20vh" data-speed="2"><img src="assets/town_house3.svg"></figure>
+	<figure data-height="30vh" data-speed="2"><img src="assets/town_house4.svg"></figure>
+	<figure data-height="30vh" data-speed="2"><img src="assets/town_house6.svg"></figure>	
+
+	<figure data-height="40vh" data-speed="3"><img src="assets/town_house1.svg"></figure>
+	<figure data-height="50vh" data-speed="3"><img src="assets/town_house2.svg"></figure>	
+	<figure data-height="60vh" data-speed="3"><img src="assets/town_house4.svg"></figure>
+
+	<figure data-height="50vh" data-speed="3"><img src="assets/town_animated_house1.svg"></figure>
+
+</section>
+
+
+<!-- section intro : this is the welcome area.-->
+
+<section id="intro">
+
+	<div>
+
+		<h1>
+
+			<!-- text carusell -->
+
+			<span
+			class="txt-rotate"
+     		data-period="1500"
+     		data-rotate='[ "Meet", "Learn", "Earn", "Network"]'
+     		>
+     		</span>
+
+		at Gitcoin.<br/>
+		The Place made for you. Need Headline!
+
+		</h1>
+
+		<p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation.</p>
+
+		<a href="#">
+			<button>Signup with GitHub</button>	
+		</a>		
+	</div>
+
+	<figure>
+		<img id="introMeet" class="floating" src="assets/introMeet_animation.svg">
+		<img id="introLearn" class="floating hidden" src="assets/introLearn_animation.svg">
+		<img id="introEarn" class="floating hidden" src="assets/introEarn_animation.svg">
+		<img id="introNetwork" class="floating hidden" src="assets/introNetwork_animation.svg">
+	</figure>
+
+</section>
+
+
+
+<!-- what is gitcoin -->
+
+<section id="whatisgitcoin">
+	<h1 >What is Gitcoin ?</h1>
+	
+	<figure >
+		<img loading="lazy" class="floating2" src="assets/whatisgitcoin_animated.svg">
+	</figure>
+
+	<div class="grid">
+		<div>
+			<h2 >Gitcoin for Developers</h2>
+			<p >Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation.</p>
+			<a href="#">
+				<button >Learn more</button>
+			</a>
+		</div>
+
+		<div>
+			<h2 >Gitcoin for Founders</h2>
+			<p >Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation.</p>
+			<a href="#">
+				<button >Learn more</button>
+			</a>
+		</div>
+	</div>
+	
+</section>
+
+
+
+<!-- section trust -->
+
+<section id="trust">
+
+	<h1>Write a sentence about why you can trust gitcoin!</h1>
+
+	<div class="grid">
+
+		<div>
+			<h1>1</h1>
+			<h2>Mission</h2>
+		</div>
+
+		<div>
+			<h1>400312</h1>
+			<h2>Developers</h2>
+		</div>
+
+		<div>
+			<h1>$5mm</h1>
+			<h2>Gross Merchandising Volume</h2>
+		</div>	
+
+	</div>
+
+	
+
+</section>
+
+
+
+
+
+
+
+
+<!-- partner logos -->
+
+<section id="partners">
+
+	<h2>Trusted by</h2>
+
+	<div class="grid">
+		<figure><img loading="lazy" src="assets/partners/arweave.svg"></figure>
+		<figure><img loading="lazy" src="assets/partners/chainlink.svg"></figure>
+		<figure><img loading="lazy" src="assets/partners/ethereumfoundation.svg"></figure>
+		<figure><img loading="lazy" src="assets/partners/near.svg"></figure>
+		<figure><img loading="lazy" src="assets/partners/protocollabs.svg"></figure>
+		<figure><img loading="lazy" src="assets/partners/sia.svg"></figure>
+	</div>	
+</section>
+
+
+	
+
+
+
+
+
+
+
+<!-- developers -->
+
+<section class="grid">
+
+	<h1>Gitcoin for Developers</h1>
+
+	<div class="grid">
+		<div>
+			<h2>Hackathons</h2>
+			<p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation.</p>
+			<a href="#"><button>Learn More</button></a>
+		</div>
+		<figure>
+			<img loading="lazy" class="floating" src="assets/hackathons_animated.svg">
+		</figure>
+	</div>
+
+	<div class="grid reverse">
+		<div>
+			<h2>Grants</h2>
+			<p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation.</p>
+			<a href="#"><button>Learn More</button></a>
+		</div>
+		<figure>
+			<img loading="lazy" class="floating2"  src="assets/grants_animated.svg">
+		</figure>
+	</div>
+
+	<div class="grid">
+		<div>
+			<h2>Kernel</h2>
+			<p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation.</p>
+			<a href="#"><button>Learn More</button></a>
+		</div>
+		<figure>
+			<img loading="lazy" class="floating"  src="assets/kernel_animated.svg">
+		</figure>
+	</div>
+
+	<div class="grid reverse">
+		<div>
+			<h2>Bounties</h2>
+			<p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation.</p>
+			<a href="#"><button>Learn More</button></a>
+		</div>
+		<figure>
+			<img loading="lazy" class="floating2"  src="assets/bounties_animated.svg">
+		</figure>
+	</div>
+
+	<div class="grid">
+		<div>
+			<h2>Quests</h2>
+			<p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation.</p>
+			<a href="#"><button>Learn More</button></a>
+		</div>
+		<figure>
+			<img loading="lazy" class="floating"  src="assets/quests_animated.svg">
+		</figure>
+	</div>
+
+</section>
+
+
+
+
+<!-- network -->
+
+<section class="grid">
+
+	<h1>The Network</h1>
+
+	<div class="grid">
+		<div>
+			<h2>Townsquare</h2>
+			<p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation.</p>
+			<a href="#"><button>Learn More</button></a>
+		</div>
+		<figure>
+			<img loading="lazy" class="floating2"  src="assets/townsquare_animated.svg">
+		</figure>
+	</div>
+
+	<div class="grid reverse">
+		<div>
+			<h2>Hire Devs</h2>
+			<p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation.</p>
+			<a href="#"><button>Learn More</button></a>
+		</div>
+		<figure>
+			<img loading="lazy" class="floating"  src="assets/devs_animated.svg">
+		</figure>
+	</div>
+
+</section>
+
+
+
+
+
+
+<!-- twitter wall of love -->
+
+<section id="twitter">
+
+	<h1>Twitter Wall of Love</h1>
+
+	<div class="grid">
+
+		<figure>
+			<img loading="lazy" src="assets/twitter.png">
+			<figcaption><a href="#">@peter</a> r woirw roiwriow riwer worwoeir jweoirweior weorwor jworjwior weoirweorworweo rworwo riow rwoirweoirjwoir w oi rjwoireoiwrjiow</figcaption>
+		</figure>
+
+		<figure>
+			<img loading="lazy" src="assets/twitter.png">
+			<figcaption><a href="#">@maxmuster</a> Remove the guesswork from website improvement. Try <a href="#">@hotjar</a> for free</figcaption>
+		</figure>
+
+		<figure>
+			<img loading="lazy" src="assets/twitter.png">
+			<figcaption><a href="#">@satoshi</a> Qualität, Sicherheit und Innovation: Seit über 30 Jahren setzt die Dynabook Europe GmbH mit mobilen (Edge) Computing Lösungen neue Maßstäbe im ITK-Markt.</figcaption>
+		</figure>
+
+		<figure>
+			<img loading="lazy" src="assets/twitter.png">
+			<figcaption><a href="#">@vitalik</a> For what? Denkendes Gesicht Gitcoin is co-creating APOLLO with <a href="#">@protocollabs</a> to support the <a href="#">@Filecoin</a> mainnet launch!</figcaption>
+		</figure>
+
+		<figure>
+			<img loading="lazy" src="assets/twitter.png">
+			<figcaption><a href="#">@schumanncombo</a> Together with the Alpha Release of our brand new protocol, we kicked off a new part of our community incentives program, this time together with <a href="#">@gitcoin</a>. We have started incentivizing new developers and will follow up with more actions</figcaption>
+		</figure>
+
+	</div>
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- footer navigation -->
+
+<section id="footernavigation">
+
+	<div>
+		<h2>Product</h2>
+		<a href="#">Latest Updates</a>
+		<a href="#">Issue Explorer</a>
+		<a href="#">Kudos</a>
+		<a href="#">Grants</a>
+		<a href="#">Quests</a>
+		<a href="#">Avatar Builder</a>
+	</div>
+
+	<div>
+		<h2>Business</h2>
+		<a href="#">About</a>
+		<a href="#">Mission</a>
+		<a href="#">Results</a>
+		<a href="#">Jobs</a>
+		<a href="#">Blog</a>
+	</div>
+
+	<div>
+		<h2>Community</h2>
+		<a href="#">Code of Conduct</a>
+		<a href="#">Chat</a>
+		<a href="#">Request Money</a>
+		<a href="#">Wiki</a>
+		<a href="#">Help</a>
+		<a href="#">Store</a>
+	</div>
+
+	<div>
+		<h2>Legal</h2>
+		<a href="#">Terms</a>
+		<a href="#">Privacy</a>
+	</div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<!-- footer social icons -->
+
+<section id="footersocial">
+
+	<figure><a href="#"><svg class="fusion"><use xlink:href="assets/fusion/fusion-interface.svg#facebook"></use></svg></a></figure>
+	<figure><a href="#"><svg class="fusion"><use xlink:href="assets/fusion/fusion-interface.svg#youtube"></use></svg></a></figure>
+	<figure><a href="#"><svg class="fusion"><use xlink:href="assets/fusion/fusion-interface.svg#twitter"></use></svg></a></figure>
+	<figure><a href="#"><svg class="fusion"><use xlink:href="assets/fusion/fusion-interface.svg#telegram"></use></svg></a></figure>
+	<figure><a href="#"><svg class="fusion"><use xlink:href="assets/fusion/fusion-interface.svg#github"></use></svg></a></figure>
+	<figure><a href="#"><svg class="fusion"><use xlink:href="assets/fusion/fusion-interface.svg#chat2"></use></svg></a></figure>
+	<figure><a href="#"><svg class="fusion"><use xlink:href="assets/fusion/fusion-interface.svg#email"></use></svg></a></figure>
+
+	
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- footer consensys -->
+
+<section id="footerconsensys">
+	<figure>
+		<a href="#">
+			<img loading="lazy" src="assets/consensys_white.svg">
+		</a>
+	</figure>
+</section>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
