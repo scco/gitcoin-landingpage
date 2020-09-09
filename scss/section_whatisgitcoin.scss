@@ -38,6 +38,16 @@ section#whatisgitcoin{
 
 
 
+@media #{$phone} { 
+	section#whatisgitcoin{
+
+		div.grid{
+			grid-template-columns: 1fr;
+		}
+
+    }
+}
+
 
 
 

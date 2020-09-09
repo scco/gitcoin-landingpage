@@ -22,7 +22,7 @@ $(document).ready(function(){
 	  	$(this).attr('data-sal-duration', '500');
 	});
 
-	$( "button" ).each(function( index) {
+	$( "a.btn" ).each(function( index) {
 	  	$(this).attr('data-sal', 'zoom-in');
 	  	$(this).attr('data-sal-delay', '300');
 	  	$(this).attr('data-sal-duration', '600');

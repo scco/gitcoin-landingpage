@@ -123,6 +123,16 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
+	"/assets/github.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/github.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/assets/grants.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -330,16 +340,6 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "/assets/logo_animated.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
-		},
-	"/assets/logo_source.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/assets/logo_source.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 52780316221407,
@@ -665,6 +665,14 @@
 		"oF": 0,
 		"sC": 0,
 		"tS": 0
+		},
+	"/README.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/README.html",
+		"oF": 0
 		},
 	"/README.md": {
 		"cB": 0,

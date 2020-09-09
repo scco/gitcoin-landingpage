@@ -1,14 +1,14 @@
 
 #fixed-signup-button{
   position: fixed;
-  bottom: 2em;
+  top: 2em;
   right: -100vh;
   z-index: 10000;
   button{
     margin:0;
     background-color: var(--polarisblue);
     &:hover{
-      background-color: var(--vinuspurple);
+      background-color: var(--polarisblue_dark); 
     };
   }
 

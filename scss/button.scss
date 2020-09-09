@@ -1,29 +1,47 @@
-button{
+a.btn{
 
-	margin:0;
+	display: inline-grid;
+	grid-template-columns: auto;
+	grid-gap: 0.7em;
+
 	padding:1em 1.5em;
-	border:0;
-	outline:0;
-
-	font-size: 100%;
-
-	color: var(--starwhite);
-	background-color: var(--vinuspurple);
-
+	border-radius: 3px;
 	cursor: pointer;
-	transition: all 500ms ease;
 
+	transition: all 500ms ease;
 	margin-bottom: 1rem;
 
+	color: var(--starwhite);
+	background-color: var(--polarisblue);
+	text-decoration: none;
+
 	&:hover{
-		background-color: var(--polarisblue);
+		background-color: var(--polarisblue_dark);  
 	};
 
-}
-
-
-a{
-	button{
+	span{
+		margin: auto;
 		text-decoration: none;
 	}
+
 }
+
+
+a.btn{
+	&.icon {
+		grid-template-columns: auto auto;
+
+		img{
+			width: 32px;
+			height: 32px;
+			margin: auto;
+		}
+
+	}
+}
+
+
+
+
+
+

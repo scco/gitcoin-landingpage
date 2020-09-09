@@ -23,6 +23,7 @@
   --darkcosmicteal: #0FCE7C;
   --stardustyellow: #FFCE08;
   --polarisblue: #3E00FF;
+  --polarisblue_dark: #3300CC;
   --vinuspurple: #8E2ABE;
   --regulusred: #F9006C;
   --milkywayblue: #15003E;
@@ -107,27 +108,37 @@ p {
   left: 3em;
 }
 #logo img {
-  width: 150px;
+  width: 200px;
 }
 
-button {
-  margin: 0;
+a.btn {
+  display: inline-grid;
+  grid-template-columns: auto;
+  grid-gap: 0.7em;
   padding: 1em 1.5em;
-  border: 0;
-  outline: 0;
-  font-size: 100%;
-  color: var(--starwhite);
-  background-color: var(--vinuspurple);
+  border-radius: 3px;
   cursor: pointer;
   transition: all 500ms ease;
   margin-bottom: 1rem;
-}
-button:hover {
+  color: var(--starwhite);
   background-color: var(--polarisblue);
+  text-decoration: none;
+}
+a.btn:hover {
+  background-color: var(--polarisblue_dark);
+}
+a.btn span {
+  margin: auto;
+  text-decoration: none;
 }
 
-a button {
-  text-decoration: none;
+a.btn.icon {
+  grid-template-columns: auto auto;
+}
+a.btn.icon img {
+  width: 32px;
+  height: 32px;
+  margin: auto;
 }
 
 section.grid {
@@ -304,7 +315,7 @@ section#town.dim {
 }
 #fixed-signup-button {
   position: fixed;
-  bottom: 2em;
+  top: 2em;
   right: -100vh;
   z-index: 10000;
   transition: all 1s ease;
@@ -314,7 +325,7 @@ section#town.dim {
   background-color: var(--polarisblue);
 }
 #fixed-signup-button button:hover {
-  background-color: var(--vinuspurple);
+  background-color: var(--polarisblue_dark);
 }
 #fixed-signup-button.show {
   right: 2em;
@@ -814,6 +825,11 @@ section#whatisgitcoin div.grid div p {
   max-width: 600px;
 }
 
+@media (max-width: 688px) {
+  section#whatisgitcoin div.grid {
+    grid-template-columns: 1fr;
+  }
+}
 section#trust {
   margin: 0em 3em;
   margin-top: 12em;
@@ -903,6 +919,15 @@ section#twitter div.grid {
   grid-template-columns: repeat(3, 1fr);
   grid-row-gap: 4em;
   grid-column-gap: 2em;
+}
+section#twitter svg.twitter-icon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 46px;
+  height: 46px;
+  fill: var(--polarisblue);
+  stroke: none;
 }
 section#twitter figure {
   border: 2px solid var(--polarisblue);

@@ -18,7 +18,15 @@ section#twitter{
 		grid-column-gap: 2em;
 	}
 
-
+	svg.twitter-icon{
+		position: absolute;
+		top:1rem;
+		right:1rem;
+		width: 46px;
+		height: 46px;
+		fill: var(--polarisblue);
+		stroke: none;
+	}
 
 	figure{
 
