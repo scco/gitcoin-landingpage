@@ -1,4 +1,4 @@
-a.btn{
+a.btn, button.btn{
 
 	display: inline-grid;
 	grid-template-columns: auto;
@@ -8,15 +8,18 @@ a.btn{
 	border-radius: 3px;
 	cursor: pointer;
 
-	transition: all 500ms ease;
 	margin-bottom: 1rem;
 
 	color: var(--starwhite);
 	background-color: var(--polarisblue);
 	text-decoration: none;
 
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+
 	&:hover{
-		background-color: var(--polarisblue_dark);  
+		filter: brightness(75%);
 	};
 
 	span{
@@ -24,10 +27,9 @@ a.btn{
 		text-decoration: none;
 	}
 
-}
 
 
-a.btn{
+	/* enhance to a 2col grid for icon */
 	&.icon {
 		grid-template-columns: auto auto;
 
@@ -38,6 +40,8 @@ a.btn{
 		}
 
 	}
+
+
 }
 
 

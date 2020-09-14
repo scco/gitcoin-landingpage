@@ -1,16 +1,8 @@
-
 #fixed-signup-button{
   position: fixed;
   top: 2em;
   right: -100vh;
   z-index: 10000;
-  button{
-    margin:0;
-    background-color: var(--polarisblue);
-    &:hover{
-      background-color: var(--polarisblue_dark); 
-    };
-  }
 
   transition: all 1s ease;
 
@@ -18,4 +10,14 @@
   	right: 2em;
   }
 
+}
+
+
+
+@media #{$phone} { 
+	#fixed-signup-button{
+
+		display: none;
+
+    }
 }

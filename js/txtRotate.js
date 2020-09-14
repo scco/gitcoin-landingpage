@@ -25,16 +25,15 @@
       this.txt = fullTxt.substring(0, this.txt.length + 1);
     }
 
-        
     this.el.innerHTML = '<span class="wrap style'+fullTxt+'">'+this.txt+'</span>';
 
-
       // mod : hide all possible intro Images
-      // and show next image by remove class hidden
-      $( "#introMeet" ).addClass("hidden");
       $( "#introLearn" ).addClass("hidden");
       $( "#introEarn" ).addClass("hidden");
       $( "#introNetwork" ).addClass("hidden");
+      $( "#introBuild" ).addClass("hidden");
+
+      // and show next image by remove class hidden
       $( "#intro"+(fullTxt)).removeClass("hidden");
   
    

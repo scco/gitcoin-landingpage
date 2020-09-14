@@ -23,7 +23,6 @@
   --darkcosmicteal: #0FCE7C;
   --stardustyellow: #FFCE08;
   --polarisblue: #3E00FF;
-  --polarisblue_dark: #3300CC;
   --vinuspurple: #8E2ABE;
   --regulusred: #F9006C;
   --milkywayblue: #15003E;
@@ -79,7 +78,7 @@ p {
   font-size: 100%;
   font-weight: 400;
   line-height: 1.6em;
-  margin-bottom: 1rem;
+  margin-bottom: 1.6rem;
 }
 
 @media (min-width: 1313px) {
@@ -111,31 +110,42 @@ p {
   width: 200px;
 }
 
-a.btn {
+@media (max-width: 688px) {
+  #logo {
+    top: 2em;
+    left: 2em;
+  }
+  #logo img {
+    width: 150px;
+  }
+}
+a.btn, button.btn {
   display: inline-grid;
   grid-template-columns: auto;
   grid-gap: 0.7em;
   padding: 1em 1.5em;
   border-radius: 3px;
   cursor: pointer;
-  transition: all 500ms ease;
   margin-bottom: 1rem;
   color: var(--starwhite);
   background-color: var(--polarisblue);
   text-decoration: none;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  /* enhance to a 2col grid for icon */
 }
-a.btn:hover {
-  background-color: var(--polarisblue_dark);
+a.btn:hover, button.btn:hover {
+  filter: brightness(75%);
 }
-a.btn span {
+a.btn span, button.btn span {
   margin: auto;
   text-decoration: none;
 }
-
-a.btn.icon {
+a.btn.icon, button.btn.icon {
   grid-template-columns: auto auto;
 }
-a.btn.icon img {
+a.btn.icon img, button.btn.icon img {
   width: 32px;
   height: 32px;
   margin: auto;
@@ -180,6 +190,8 @@ section.grid div.grid.reverse figure {
   section.grid div.grid div {
     grid-column: 1;
     grid-row: 2;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
   }
   section.grid div.grid figure {
     grid-column: 1;
@@ -252,10 +264,6 @@ section#town.dim {
   border-right: 3px solid var(--cosmicteal);
   animation: cursor0 500ms infinite;
 }
-.txt-rotate .wrap.styleMeet {
-  color: var(--cosmicteal);
-  animation: cursorMeet 500ms infinite;
-}
 .txt-rotate .wrap.styleLearn {
   color: var(--stardustyellow);
   animation: cursorLearn 500ms infinite;
@@ -268,8 +276,12 @@ section#town.dim {
   color: var(--vinuspurple);
   animation: cursorNetwork 500ms infinite;
 }
+.txt-rotate .wrap.styleBuild {
+  color: var(--cosmicteal);
+  animation: cursorBuild 500ms infinite;
+}
 
-@-webkit-keyframes cursorMeet {
+@-webkit-keyframes cursorBuild {
   0% {
     border-color: var(--milkywayblue);
   }
@@ -320,17 +332,15 @@ section#town.dim {
   z-index: 10000;
   transition: all 1s ease;
 }
-#fixed-signup-button button {
-  margin: 0;
-  background-color: var(--polarisblue);
-}
-#fixed-signup-button button:hover {
-  background-color: var(--polarisblue_dark);
-}
 #fixed-signup-button.show {
   right: 2em;
 }
 
+@media (max-width: 688px) {
+  #fixed-signup-button {
+    display: none;
+  }
+}
 [data-sal] {
   transition-duration: 0.2s;
   transition-duration: var(--sal-duration, 0.2s);
@@ -801,6 +811,12 @@ section#intro figure .hidden {
     margin-top: 8em;
   }
 }
+@media (max-width: 688px) {
+  section#intro {
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+  }
+}
 section#whatisgitcoin {
   margin: 0em;
   margin-top: 12em;
@@ -828,6 +844,8 @@ section#whatisgitcoin div.grid div p {
 @media (max-width: 688px) {
   section#whatisgitcoin div.grid {
     grid-template-columns: 1fr;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
   }
 }
 section#trust {
@@ -892,12 +910,12 @@ section#partners div.grid {
 }
 section#partners div.grid figure {
   background-color: var(--polarisblue);
+  border-radius: 3px;
 }
 section#partners div.grid figure img {
   width: 100%;
   height: auto;
   margin: auto;
-  background-color: var(--polarisblue);
 }
 
 @media (max-width: 688px) {
@@ -958,18 +976,76 @@ section#twitter figure a {
   }
 }
 @media (max-width: 688px) {
+  section#twitter {
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+  }
   section#twitter div.grid {
     grid-template-columns: 1fr;
   }
 }
-section#footernavigation {
+section#newsletter {
   margin: 0em 3em;
   margin-top: 12em;
+  text-align: center;
+  border: 2px solid var(--vinuspurple);
+  padding-top: 1.5em;
+  padding-bottom: 1em;
+}
+section#newsletter h2 {
+  margin-bottom: 1.5em;
+}
+section#newsletter div.options {
+  margin-bottom: 1.5em;
+}
+section#newsletter span {
+  padding-right: 0.3rem;
+}
+section#newsletter label {
+  padding: 0rem 0.3rem;
+}
+section#newsletter input[type=email] {
+  padding: 1em 1.5em;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  color: var(--polarisblue);
+  background-color: var(--starwhite);
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+}
+section#newsletter form {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+section#newsletter button.btn {
+  background-color: var(--vinuspurple);
+}
+
+@media (max-width: 688px) {
+  section#newsletter {
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+  }
+  section#newsletter h2 {
+    padding: 0rem 1rem;
+  }
+  section#newsletter span {
+    display: block;
+    margin-bottom: 1rem;
+  }
+  section#newsletter label {
+    padding: 0rem 0rem;
+  }
+}
+section#footernavigation {
+  margin: 0em 3em;
+  margin-top: 6em;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   margin-bottom: 3em;
-  border-top: 2px solid var(--cosmicteal);
-  padding-top: 3em;
 }
 section#footernavigation div h2 {
   margin-bottom: 2em;
@@ -986,8 +1062,11 @@ section#footernavigation div a:hover {
 
 @media (max-width: 688px) {
   section#footernavigation {
+    margin-left: 1.5em;
+    margin-right: 1.5em;
     grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 3em;
+    grid-column-gap: 3em;
   }
 }
 section#footersocial {
@@ -1022,6 +1101,8 @@ section#footersocial figure svg:hover {
   section#footersocial {
     grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 3em;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
   }
 }
 section#footerconsensys figure {

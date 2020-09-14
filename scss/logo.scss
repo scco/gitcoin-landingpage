@@ -8,3 +8,19 @@
 		width: 200px;
 	}
 }
+
+
+
+
+@media #{$phone} { 
+	#logo{
+
+	top: 2em;
+	left: 2em;
+	
+		img{
+			width: 150px;
+		}
+
+    }
+}

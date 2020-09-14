@@ -82,8 +82,12 @@ section#twitter{
 @media #{$phone} { 
 	section#twitter{
 
+		margin-left: 1.5em;
+		margin-right: 1.5em;
+
 		div.grid{
 			grid-template-columns: 1fr;
+			
 		}
 
     }

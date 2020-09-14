@@ -113,6 +113,36 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
+	"/assets/favicon-16x16.png": {
+		"ft": 32768,
+		"iS": 718,
+		"oA": 0,
+		"oAP": "/assets/favicon-16x16.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/favicon-32x32.png": {
+		"ft": 32768,
+		"iS": 1616,
+		"oA": 0,
+		"oAP": "/assets/favicon-32x32.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/favicon.ico": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/assets/favicon.ico",
+		"oF": 0
+		},
 	"/assets/fusion/fusion-interface.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -189,6 +219,34 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
+	"/assets/introBuild.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/introBuild.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/introBuild_animation.keyshape": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/assets/introBuild_animation.keyshape",
+		"oF": 0
+		},
+	"/assets/introBuild_animation.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/introBuild_animation.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/assets/introEarn.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -230,34 +288,6 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "/assets/introLearn_animation.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
-		},
-	"/assets/introMeet.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/assets/introMeet.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
-		},
-	"/assets/introMeet_animation.keyshape": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/assets/introMeet_animation.keyshape",
-		"oF": 0
-		},
-	"/assets/introMeet_animation.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/assets/introMeet_animation.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 52780316221407,
@@ -666,14 +696,6 @@
 		"sC": 0,
 		"tS": 0
 		},
-	"/README.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/README.html",
-		"oF": 0
-		},
 	"/README.md": {
 		"cB": 0,
 		"cS": 0,
@@ -858,6 +880,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/css/section_intro.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
+		},
+	"/scss/section_newsletter.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/css/section_newsletter.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 0

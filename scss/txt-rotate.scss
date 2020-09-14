@@ -9,11 +9,6 @@
 
   .wrap{
 
-    &.styleMeet{
-      color: var(--cosmicteal);
-      animation: cursorMeet 500ms infinite; 
-    }
-
     &.styleLearn{
       color: var(--stardustyellow);
       animation: cursorLearn 500ms infinite;
@@ -29,6 +24,11 @@
       animation: cursorNetwork 500ms infinite;
     }
 
+    &.styleBuild{
+      color: var(--cosmicteal);
+      animation: cursorBuild 500ms infinite; 
+    }
+
 
   }
 
@@ -40,7 +40,7 @@
 }
 
 
-@-webkit-keyframes cursorMeet {
+@-webkit-keyframes cursorBuild {
   0% {
     border-color: var(--milkywayblue);
   }
